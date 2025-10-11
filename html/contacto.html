@@ -27,12 +27,19 @@
   <div class="contact-grid">
     <div>
       <h2>Visitános</h2>
-      <p><strong>Dirección:</strong> Av. Libertador 2669, Buenos Aires</p>
+      <p><strong>Dirección:</strong> Lavalle 1498, Buenos Aires</p>
       <p><strong>Teléfono:</strong> +54 11-1234-5678</p>
       <p><strong>Email:</strong> consultas@vinotecanorte.com.ar</p>
       <p><strong>Instagram:</strong> @vinoteca.norte</p>
-      <iframe class="map" title="Mapa de la vinoteca" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=-58.48202303581539%2C-34.5080189733348%2C-58.47802303581539%2C-34.5040189733348&amp;layer=mapnik&amp;marker=-34.5060189733348%2C-58.48002303581539"></iframe>
-      <small class="legal">Bebidas alcohólicas: prohibida su venta a menores de 18 años.</small>
+      <iframe 
+        class="map" 
+        title="Mapa de la vinoteca" 
+        loading="lazy" 
+        width="400" 
+        height="300" 
+        src="https://www.openstreetmap.org/export/embed.html?bbox=-58.389722243472915%2C-34.60405352301985%2C-58.385722243472915%2C-34.60205352301985&amp;layer=mapnik&amp;marker=-34.60305352301985%2C-58.387722243472915"
+        allowfullscreen>
+      </iframe>
     </div>
     <form class="contact-form" id="contactForm">
       <label>Nombre
@@ -65,7 +72,7 @@
     <div>
       <h4>Contacto</h4>
         <ul class="list-plain">
-          <li>📍 Av. Libertador 2669, Buenos Aires</li>
+          <li>📍 Lavalle 1498, Buenos Aires</li>
           <li>📞 +54 11-1234-5678</li>
           <li>✉️ consultas@vinotecanorte.com.ar</li>
           <li>IG: @vinoteca.norte</li>
@@ -74,5 +81,8 @@
   </div>
   <div class="footer-legal">© <span id="year"></span> Vinoteca Norte — Todos los derechos reservados</div>
 </footer>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>

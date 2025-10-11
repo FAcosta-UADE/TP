@@ -518,6 +518,37 @@ a:hover {
   border: none;
   border-radius: var(--border-radius);
   margin-top: var(--space-md);
+  box-shadow: var(--shadow-md);
+  transition: box-shadow 0.3s ease;
+}
+
+.map:hover {
+  box-shadow: var(--shadow-lg);
+}
+
+.map-fallback {
+  text-align: center;
+  margin-top: var(--space-sm);
+}
+
+.map-fallback a {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  color: var(--color-primary);
+  font-weight: 500;
+  text-decoration: none;
+  padding: var(--space-sm) var(--space-md);
+  border: 1px solid var(--color-primary);
+  border-radius: var(--border-radius);
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.map-fallback a:hover {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  transform: translateY(-1px);
 }
 
 .legal {
